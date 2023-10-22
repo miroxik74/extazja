@@ -13,9 +13,5 @@ span {
 }
 
 section {
-    padding: 10px 60px 0px 0px;
     background-color: rgb(64, 79, 92);
-    width: 1500px;
-    margin-top: 0px;
-    margin-bottom: 2000px;
 }
