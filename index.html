@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <system.webServer>
-            <httpProtocol>
-              <customHeaders>
-                <add name="X-Frame-Options" value="SAMEORIGIN" />
-              </customHeaders>
-            </httpProtocol>
-          </system.webServer>
-    <div id="twitch-embed"></div>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 1920,
-        height: 1080,
-        channel: "extazja",
-        allowfullscreen,
-        parent: ["https://miroxik74.github.io/extazja"]
-      });
-    </script>
-        <iframe id="twitch-chat-embed"
-            src="https://www.twitch.tv/embed/extazja/chat?parent=https://miroxik74.github.io/extazja"
-            height="1080"
-            width="450"
-            add_header: X-Frame-Options SAMEORIGIN>
-        </iframe>
-        <head> 
-            <title>Karolina Extazja - CV</title>
-            <link rel="stylesheet" href="style.css"/>
-        </head>
-            <section>
-                <img src="extazja.jpg" alt="obraz sie zepsuł" width="288px" height="360px"/>
-                <h1> Karolina Extazja</h1>
-                <span>Streamer</span>
-            </section>
-    </div>
+        <div id="twitch-embed"></div>
+
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+            
+            <script type="text/javascript">
+            new Twitch.Player("twitch-embed", {
+                channel: "extazja",
+                allowfullscreen: true,
+                height: 1080,
+                width: 1920,
+                parent: ["miroxik74.github.io/extazja"]
+            });
+            </script>
+            <iframe id="twitch-chat-embed"
+                    src="https://www.twitch.tv/embed/extazja/chat?parent=miroxik74.github.io/extazja"
+                    height="1000"
+                    width="400"
+                    >
+            </iframe>
+                <head> 
+                    <title>Karolina Extazja - CV</title>
+                    <link rel="stylesheet" href="style.css"/>
+                </head>
+                    <section>
+                        <img src="extazja.jpg" alt="obraz sie zepsuł" width="288px" height="360px"/>
+                        <h1> Karolina Extazja</h1>
+                        <span>Streamer</span>
+                    </section>
+        </div>
     </body>
 </html> 
