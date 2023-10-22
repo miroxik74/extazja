@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <system.webServer>
+            <httpProtocol>
+              <customHeaders>
+                <add name="X-Frame-Options" value="SAMEORIGIN" />
+              </customHeaders>
+            </httpProtocol>
+          </system.webServer>
     <div id="twitch-embed"></div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
@@ -16,7 +23,7 @@
             src="https://www.twitch.tv/embed/extazja/chat?parent=https://miroxik74.github.io/extazja"
             height="1080"
             width="450"
-            add_header X-Frame-Options SAMEORIGIN;>
+            add_header: X-Frame-Options SAMEORIGIN>
         </iframe>
         <head> 
             <title>Karolina Extazja - CV</title>
