@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    background-color: rgb(64, 79, 92);
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+span {
+    color: rgb(194, 144, 144);
+}
+
+section,
+header {
+    padding: 10px 60px 0px 0px;
+    background-color: rgb(64, 79, 92);
+    width: 960px;
+    margin: 0 auto;
+}
+
+iframe {
+    margin: 0 0 0 0;
+    justify-content: right;
+}

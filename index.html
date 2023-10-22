@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <div id="twitch-embed"></div>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "extazja",
+        parent: ["https://miroxik74.github.io/extazja", "http://miroxik74.github.io/extazja", "miroxik74.github.io/extazja"]
+      });
+    </script>
+    <div id="contentframe" style="position:relative; top: 160px; left: 0px;">
+        <iframe
+            src="https://player.twitch.tv/?channel=extazja&parent=https://miroxik74.github.io/extazja&muted=true"
+            height="1080"
+            width="1920"
+            allowfullscreen>
+        </iframe>
+        <iframe id="twitch-chat-embed"
+            src="https://www.twitch.tv/embed/extazja/chat?parent=https://miroxik74.github.io/extazja"
+            height="1080"
+            width="450">
+        </iframe>
+        <head> 
+            <title>Karolina Extazja - CV</title>
+            <link rel="stylesheet" href="style.css"/>
+        </head>
+            <header>
+                <img src="extazja.jpg" alt="obraz sie zepsuł" width="288px" height="360px"/>
+                <h1> Karolina Extazja</h1>
+                <span>Streamer</span>
+            </header>
+    </div>
+    </body>
+</html> 
